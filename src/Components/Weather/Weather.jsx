@@ -12,7 +12,7 @@ import Wind_Icon from "../Assets/wind.png";
 import Loading from "../Assets/loading.gif"
 
 const Weather = () => {
-  const api_key = "c47221636141993144d47e66bc31fcca"; // Replace with your actual API key
+  const api_Key = process.env.REACT_APP_API_KEY;
 
   const [weatherIcon, setWeatherIcon] = useState(Cloud_Icon);
 
@@ -23,7 +23,7 @@ const Weather = () => {
         return 0;
       }
 
-      let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
+      let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_Key}`;
 
       try {
         let response = await fetch(url);

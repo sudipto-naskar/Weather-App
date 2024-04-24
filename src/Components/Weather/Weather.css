@@ -14,22 +14,22 @@ body {
   animation: mymove 5s infinite;
   border-radius: 12px;
   box-shadow: 0 0 20px 10px #476b9bb3;
-  height: 620px;
-  margin: 70px auto auto;
-  width: 607px;
+  height: 552px;
+  margin: 108px auto auto;
+  width: 450px;
 }
 
 .top-bar {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 30px;
+  margin-left: 40px;
 }
 
 .top-bar input {
   border-radius: 40px;
-  height: 60px;
-  width: 362px;
+  height: 50px;
+  width: 300px;
   border: none;
   outline: none;
   background: #ebfffc;
@@ -58,7 +58,6 @@ body {
 
 
 .search-icon {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +66,7 @@ body {
   background: #ebfffc;
   cursor: pointer;
   border-radius: 40px;
-  right: 31rem;
+  margin-left: 18px;
 }
 
 .search-icon:hover {
@@ -82,7 +81,7 @@ body {
 }
 
 .weather-image {
-  margin-top: 30px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,9 +97,8 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 120px;
+  font-size: 90px;
   font-weight: 400;
-  margin-left: -25px;
 }
 
 .weather-location {
@@ -110,11 +108,11 @@ body {
   color: white;
   font-size: 55px;
   font-weight: 400;
-  margin-left: -25px;
+  margin-left: 18px;
 }
 
 .data-container {
-  margin-top: 20px;
+  margin-top: 10px;
   color: white;
   display: flex;
   justify-content: center;
@@ -143,9 +141,14 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  body{
+    background-image: url(Background/4.gif);
+    background-size: cover;
+  }
+  
   .container {
     height: 500px;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 85%;
     animation: back 20s infinite;
   }
@@ -155,20 +158,12 @@ body {
       background-image: url(Background/1.gif);
     }
 
-    25% {
+    50% {
       background-image: url(Background/2.gif)
     }
 
-    50% {
-      background-image: url(Background/3.gif);
-    }
-
-    75% {
-      background-image: url(Background/4.gif);
-    }
-
     100% {
-      background-image: url(Background/5.gif);
+      background-image: url(Background/3.gif);
     }
   }
 
@@ -180,11 +175,10 @@ body {
     border-radius: 40px;
     height: 38px;
     width: 220px;
-    margin-left: -55px;
   }
 
   .top-bar input:hover {
-    transform: scale(1.12);
+    transform: scale(1.05);
     transition: 0.5s ease;
   }
 
@@ -200,8 +194,6 @@ body {
   }
 
   .search-icon {
-    position: absolute;
-    right: 3rem;
     width: 40px;
     height: 40px;
   }
