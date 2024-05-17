@@ -5,9 +5,10 @@
 }
 
 body {
-  background-color: #626262;
+  background-image: url(Background/light.jpg);
   background-size: cover;
   overflow-y: hidden;
+  backdrop-filter: blur(3px);
 }
 
 .container {
@@ -17,6 +18,8 @@ body {
   height: 552px;
   margin: 108px auto auto;
   width: 450px;
+  background: linear-gradient(to bottom, #b599cf, #a3d3db);
+  padding: 10px;
 }
 
 .top-bar {
@@ -35,8 +38,8 @@ body {
   background: #ebfffc;
   padding-left: 35px;
   padding-right: 35px;
-  color: #626262;
-  font-weight: 500;
+  color: #c4b7d0;
+  font-weight: 550;
   font-size: 20px;
 }
 
@@ -66,7 +69,7 @@ body {
   background: #ebfffc;
   cursor: pointer;
   border-radius: 40px;
-  margin-left: 18px;
+  margin-left: 12px;
 }
 
 .search-icon:hover {
@@ -142,33 +145,21 @@ body {
 
 @media screen and (max-width: 480px) {
   body{
-    background-image: url(Background/4.gif);
+   background-image: url(Background/light.jpg);
     background-size: cover;
   }
   
   .container {
     height: 500px;
-    margin-top: 150px;
-    width: 85%;
-    animation: back 20s infinite;
-  }
-
-  @keyframes back {
-    0% {
-      background-image: url(Background/1.gif);
-    }
-
-    50% {
-      background-image: url(Background/2.gif)
-    }
-
-    100% {
-      background-image: url(Background/3.gif);
-    }
+    margin: 8% auto;
+    width: 90%;
+    background: linear-gradient(to bottom, #b599cf, #a3d3db);
+    padding: 5px;
   }
 
   .top-bar {
     padding-top: 42px;
+    margin-left: 36px;
   }
 
   .top-bar input {

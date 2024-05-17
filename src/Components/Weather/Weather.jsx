@@ -12,7 +12,7 @@ import Wind_Icon from "../Assets/wind.png";
 import Loading from "../Assets/loading.gif"
 
 const Weather = () => {
-  const api_Key = process.env.REACT_APP_API_KEY;
+  const api_Key = "c47221636141993144d47e66bc31fcca";
 
   const [weatherIcon, setWeatherIcon] = useState(Cloud_Icon);
 
