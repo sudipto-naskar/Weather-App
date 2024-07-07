@@ -9,6 +9,7 @@ body {
   background-size: cover;
   overflow-y: hidden;
   backdrop-filter: blur(3px);
+  min-height: 100vhi;
 }
 
 .container {
@@ -147,6 +148,7 @@ body {
   body{
    background-image: url(Background/light.jpg);
     background-size: cover;
+    
   }
   
   .container {
